@@ -1,9 +1,14 @@
-"
+call pathogen#infect()
+call pathogen#helptags()
+
 " Tabs as spaces
 " See http://vim.wikia.com/wiki/Indenting_source_code
-set expandtab
-set shiftwidth=4
-set softtabstop=4
+#set expandtab
+#set shiftwidth=4
+#set softtabstop=4
+set ts=4 sts=4 sw=4 expandtab
+
+set number
 
 if has("autocmd")
   " Enable file type detection.
