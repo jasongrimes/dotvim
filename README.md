@@ -22,6 +22,7 @@ Add a plugin:
     git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive 
     git add .
     git commit -m 'Install fugitive plugin as a submodule.'
+    git push
 
 Upgrade a plugin:
 
@@ -35,4 +36,4 @@ Upgrading all bundled plugins:
 Credit
 ======
 
-Taken from [this vimcast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) by [Drew Neil](http://drewneil.com/) (aka nelstrom).
+Approach taken from [this vimcast](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) by [Drew Neil](http://drewneil.com/) (aka nelstrom).
