@@ -26,3 +26,6 @@ syntax on
 
 set pastetoggle=<F2>
 
+" Use tree view in netrw file explorer
+let g:netrw_liststyle=3
+
