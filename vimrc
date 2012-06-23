@@ -29,3 +29,12 @@ set pastetoggle=<F2>
 " Use tree view in netrw file explorer
 let g:netrw_liststyle=3
 
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
