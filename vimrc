@@ -26,8 +26,8 @@ syntax on
 
 set pastetoggle=<F2>
 
-" Use tree view in netrw file explorer
-let g:netrw_liststyle=3
+let g:netrw_liststyle=3 " Use tree view in netrw file explorer
+let g:netrw_browse_split=4 " when browsing, <cr> will open the file in previous window.
 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
@@ -38,3 +38,5 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
+" Path for finding files
+set path=.,**
