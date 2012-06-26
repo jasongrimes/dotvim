@@ -41,3 +41,7 @@ endfunc
 
 " Path for finding files
 set path=.,**
+
+" Make a shortcut for opening :NERDTree with :NE
+:command NE NERDTree
+:command NEF NERDTreeFind
