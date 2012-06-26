@@ -25,6 +25,7 @@ endif
 syntax on
 
 set pastetoggle=<F2>
+set hidden
 
 let g:netrw_liststyle=3 " Use tree view in netrw file explorer
 let g:netrw_browse_split=4 " when browsing, <cr> will open the file in previous window.
