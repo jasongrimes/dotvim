@@ -39,9 +39,15 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 
-" Path for finding files
-set path=.,**
-
 " Make a shortcut for opening :NERDTree with :NE
 :command NE NERDTree
 :command NEF NERDTreeFind
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+" Path for finding files
+set path=.,**
+
+" Disable folding (to get rid of the annoying collapse-by-default in markdown files)
+set nofoldenable
